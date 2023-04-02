@@ -25,7 +25,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Here](https://your-solution-url.com)
+- Solution URL: [Here](https://github.com/maiger/fem-profile-card-component)
 - Live Site URL: [Here](https://your-live-site-url.com)
 
 ## My process

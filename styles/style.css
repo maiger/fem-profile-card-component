@@ -49,22 +49,41 @@ body {
   display: grid;
   place-content: center;
   background-color: var(--color-primary-1);
-  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-position: -25% -150%, 120% 350%;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 800px;
-}
-@media (max-width: 375px) {
-  body {
-    background-position: -600% -20%, 600% 120%;
-    background-size: 350px;
-  }
+  overflow: hidden;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   color: black;
+}
+
+.bg-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-25%, -25%);
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .bg-img-top {
+    width: 70rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.bg-img-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 25%);
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .bg-img-bottom {
+    width: 70rem;
+    transform: translate(50%, 50%);
+  }
 }
 
 .card {
